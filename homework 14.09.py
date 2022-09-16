@@ -13,4 +13,9 @@ if a >= 10 and a % 3 == 0:
 else:
     print('no')
 
-
+a = int(input('Введите число №1: '))
+b = int(input('Введите число №2: '))
+c = int(input('Введите число №3: '))
+max = max(a, b, c)
+print(f'max = {max}')
+exit()
