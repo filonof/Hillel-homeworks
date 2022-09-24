@@ -53,8 +53,6 @@ for i in range(0, rows):
     # new line after each row
     print("\r")
 
-'''
-
 rows = 5
 k = 2 * rows - 2
 for i in range(0, rows):
@@ -64,3 +62,19 @@ for i in range(0, rows):
     for j in range(0, i + 1):
         print("* ", end="")
     print("")
+
+'''
+
+N = int(input('Введите ширину треугольника: '))
+i = 1
+while i <= N:
+    j = i
+    while j < N:
+        print(' ', end='')
+        j += 1
+    k = 1
+    while k <= i:
+        print('*', end='')
+        k += 1
+    print()
+    i += 1

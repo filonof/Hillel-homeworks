@@ -32,4 +32,17 @@ while i >= 1:
         k += 1
     print()
     i -= 1
-
+# 4
+N = int(input('Введите ширину треугольника: '))
+i = 1
+while i <= N:
+    j = i
+    while j < N:
+        print(' ', end='')
+        j += 1
+    k = 1
+    while k <= i:
+        print('*', end='')
+        k += 1
+    print()
+    i += 1
