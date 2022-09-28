@@ -25,11 +25,11 @@ print()
 
 symbol = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяабвгдеёжзийклмнопрстуфхцчшщъыьэюя01234567890123456789'
 input1 = input("Введите строку: ")
-sdvig = int(input('Введите сдвиг: '))
+shift = int(input('Введите сдвиг: '))
 output = ''
 for i in input1:
     char = symbol.find(i)
-    new_symbol = char + sdvig
+    new_symbol = char + shift
     if i in symbol:
         output += symbol[new_symbol]
     else:
