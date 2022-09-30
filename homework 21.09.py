@@ -13,6 +13,18 @@ print()
 
 # 3
 
+import random
+
+number = random.randint(1, 10)
+n = int(input('Введи число: '))
+while n != number:
+    if n < number:
+        print("Бери больше")
+    elif n > number:
+        print("Бери меньше")
+    n = int(input("Повтори попытку:"))
+print("Ты угадал!")
+
 # 4
 
 for i in range(1, 11):

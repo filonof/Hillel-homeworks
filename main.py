@@ -121,6 +121,19 @@ for i in input1:
         output += i
 print(output)
 print()
+
+
+import random
+
+number = random.randint(1, 10)
+n = int(input('Введите число: '))
+for number in range(1, 11):
+    if number > n:
+        print('Бери меньше')
+    if number < n:
+        print('Бери больше')
+    else:
+        print('Ты угадал')
 '''
 
 #  ЗАДАНИЕ 0
@@ -183,3 +196,48 @@ chr = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВ�
 '''
 # 4
 
+import random
+
+number = random.randint(1, 10)
+n = int(input('Введи число: '))
+while n != number:
+    if n < number:
+        print("Бери больше")
+    elif n > number:
+        print("Бери меньше")
+    n = int(input("Повтори попытку:"))
+print("Ты угадал!")
+
+
+'''
+while K!=N:
+    if K<N:
+        print("Ваше число меньше, чем задумал компьютер")
+    elif K>N:
+        print("Ваше число больше, чем задумал компьютер")
+    K=int(input("Повторите попытку:")
+print("Вы угадали")
+
+while n != number:
+    n = int(input('Try more: '))
+    if n > number:
+        print('Try less')
+    elif n < number:
+        print('Try more')
+    else:
+        print('You\'ve guessed correct')
+exit()
+
+from random import randint
+N=randint(1,10)
+K=int(input("Угадайте целое число от 1 до 10:"))
+while K!=N:
+    K=int(input("Повторите попытку:"))
+    if K<N:
+        print("Ваше число меньше, чем задумал компьютер")
+    elif K>N:
+        print("Ваше число больше, чем задумал компьютер")
+    else:
+        print("Вы угадали")
+print(K)
+print(N)'''
