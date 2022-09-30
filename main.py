@@ -196,7 +196,7 @@ chr = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВ�
 '''
 # 4
 
-import random
+'''import random
 
 number = random.randint(1, 10)
 n = int(input('Введи число: '))
@@ -206,7 +206,7 @@ while n != number:
     elif n > number:
         print("Бери меньше")
     n = int(input("Повтори попытку:"))
-print("Ты угадал!")
+print("Ты угадал!")'''
 
 
 '''
@@ -241,3 +241,23 @@ while K!=N:
         print("Вы угадали")
 print(K)
 print(N)'''
+
+import random
+
+guesses = 1
+number = random.randint(1, 10)
+
+while guesses < 4:
+    guess = int(input(f'Попытка #{guesses}: '))
+    guesses += 1
+    if guess < number:
+        print('Бери больше')
+    if guess > number:
+        print('Бери меньше')
+    if guess == number:
+        break
+
+if guess == number:
+    print('Ты угадал!')
+else:
+    print('Ты не угадал')
