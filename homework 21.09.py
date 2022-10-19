@@ -1,10 +1,10 @@
 # 1
 
-str1 = '5 4 3 2 1'
-for value in [str1]:
-    print(value)
+n = 6
+for i in range(5):
+    n -= 1
+    print(n, end=' ')
 print()
-
 # 2
 
 for i in range(1, 11):

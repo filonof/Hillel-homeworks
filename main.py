@@ -325,11 +325,15 @@ for word in line.split():
 print(a)
 '''
 
-N = 1000
+'''N = 1000
 while N > 7:
     N -= 7
     print(f'zxc = {N}')
-
+'''
+n = 6
+for i in range(5):
+    n -= 1
+    print(n, end=' ')
 '''
 list_A = [11,1111,1112,1,2,3,4,5,6,7,8,9,10]
 maxval = list_A[0]
@@ -338,14 +342,4 @@ for i in range(0, len(list_A), 1):
         maxval = list_A[i]
 print(maxval)
 '''
-list_A = []
-
-for i in range(5):
-    list_A.append(i + 1)
-
-print(f'A = {list_A}')
-
-list_A.pop()
-
-print(f'A = {list_A}')
 
