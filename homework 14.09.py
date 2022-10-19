@@ -17,17 +17,16 @@ print(f'max = {max}')
 
 # *
 number = int(input('Введите трехзначное число: '))
-reversed_number = 0
 
+if not 100 <= number <= 999:
+    print('Ошибка. Попробуйте другое число')
+    exit()
 
-def rev(number):
-    global reversed_number
-    if number > 0:
-        a = number % 10
-        reversed_number = (reversed_number * 10) + a
-        rev(number // 10)
-    return reversed_number
+first_num = number % 10
+second_num = number % 100 // 10
+third_num = number // 100
 
+final_num = first_num * 100 + second_num * 10 + third_num
 
-reversed_number = rev(number)
-print(f'Реверс числа = {reversed_number}')
+print(final_num)
+exit()
