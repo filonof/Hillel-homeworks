@@ -22,6 +22,7 @@ print()
 
 # 3
 
+password = input('Enter your password: ')
 
 
 # 4
