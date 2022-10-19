@@ -89,4 +89,4 @@ text = input('Enter your sentence: ')
 
 number_of_digits = sum(c.isdigit() for c in text)
 
-print(number_of_digits)
+print(f'Number of digits: {number_of_digits}')
