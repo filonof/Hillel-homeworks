@@ -325,9 +325,10 @@ for word in line.split():
 print(a)
 '''
 
-line = input('Enter your sentence: ')
-number_of_digits = sum(c.isdigit() for c in line)
-print(number_of_digits)
+N = 1000
+while N > 7:
+    N -= 7
+    print(f'zxc = {N}')
 
 '''
 list_A = [11,1111,1112,1,2,3,4,5,6,7,8,9,10]
@@ -337,4 +338,14 @@ for i in range(0, len(list_A), 1):
         maxval = list_A[i]
 print(maxval)
 '''
+list_A = []
+
+for i in range(5):
+    list_A.append(i + 1)
+
+print(f'A = {list_A}')
+
+list_A.pop()
+
+print(f'A = {list_A}')
 
