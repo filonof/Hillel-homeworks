@@ -78,3 +78,5 @@ def change_position(list_A, position1, position2):
 
 pprint.pprint(change_position(data, 1, 3))
 print()
+
+
